@@ -28,17 +28,17 @@
 \predate{\begin{flushleft}\large}
         \postdate{\par\end{flushleft}}
 \setlength{\droptitle}{-46pt}
-\renewcommand{\cftdot}{}
-
-% Other custom commands and environments for the problem set format
-\newcommand{\prof}[1]{\gdef\@prof{#1}}
-\newcommand{\course}[1]{\gdef\@course{#1}}
 
 % remove table of contents title
 \makeatletter
 \renewcommand\tableofcontents{%
     \@starttoc{toc}%
 }
+\renewcommand{\cftdot}{}
+\setlength{\columnsep}{2cm}
+
+\newcommand{\prof}[1]{\gdef\@prof{#1}}
+\newcommand{\course}[1]{\gdef\@course{#1}}
 
 \newtcolorbox[auto counter,number within=section]{problem}[2][section]{
     colback=white, colframe=black!75!white,
