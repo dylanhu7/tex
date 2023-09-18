@@ -14,7 +14,7 @@
 \RequirePackage[titles]{tocloft}
 \RequirePackage{multicol}
 \RequirePackage[most]{tcolorbox}
-\RequirePackage{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 \RequirePackage[capitalize]{cleveref}
 
 % Left-align title
