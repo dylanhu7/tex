@@ -4,14 +4,18 @@
 \RequirePackage{amsmath,amsfonts,amssymb,amsthm}
 \RequirePackage[most]{tcolorbox}
 \RequirePackage{tikz}
+\usetikzlibrary{arrows}
 \RequirePackage{tikz-3dplot}
 \RequirePackage{pgfplots}
 \RequirePackage{xcolor}
 \RequirePackage{bm}
 \RequirePackage{booktabs}
 \RequirePackage{tcolorbox}
+\RequirePackage{hyperref}
+\RequirePackage{cleveref}
+\RequirePackage{subcaption}
 \RequirePackage{enumerate}
-\RequirePackage{enumitem}
+\RequirePackage[shortlabels]{enumitem}
 \RequirePackage{mathtools}
 
 \usepackage[T1]{fontenc}
@@ -20,12 +24,12 @@
 
 % Configuration specific to your custom commands
 \pgfplotsset{compat=newest}
-\pgfplotsset{plot coordinates/math parser=false}
-\pgfplotsset{
-    every non boxed x axis/.append style={x axis line style=-},
-    every non boxed y axis/.append style={y axis line style=-},
-    every non boxed z axis/.append style={z axis line style=-},
-}
+% \pgfplotsset{plot coordinates/math parser=false}
+% \pgfplotsset{
+%     every non boxed x axis/.append style={x axis line style=-},
+%     every non boxed y axis/.append style={y axis line style=-},
+%     every non boxed z axis/.append style={z axis line style=-},
+% }
 
 % Custom commands
 \newcommand{\R}{\mathbb{R}}
@@ -71,6 +75,7 @@
 \newtheorem*{note*}{Note}
 
 \newenvironment{proof*}{\begin{proof}[\unskip\nopunct]}{\end{proof}}
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
 
 \DeclarePairedDelimiter{\pbrac}{(}{)}
 \DeclarePairedDelimiter{\sbrac}{[}{]}
