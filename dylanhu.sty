@@ -1,0 +1,208 @@
+% \ProvidesPackage{dylan}
+
+% % Packages specific to your custom commands
+% \RequirePackage{amsmath,amsfonts,amssymb,amsthm}
+% \RequirePackage[most]{tcolorbox}
+% \RequirePackage{tikz}
+% \usetikzlibrary{arrows}
+% \RequirePackage{tikz-3dplot}
+% \RequirePackage{pgfplots}
+% \RequirePackage{xcolor}
+% \RequirePackage{bm}
+% \RequirePackage{booktabs}
+% \RequirePackage{tcolorbox}
+% \RequirePackage{hyperref}
+% \hypersetup{
+%     colorlinks = false,
+%     hidelinks
+%     % linkcolor = blue,
+%     % filecolor = magenta,
+%     % urlcolor = cyan,
+%     % citecolor = green,
+% }
+% \RequirePackage{cleveref}
+% \RequirePackage{subcaption}
+% \RequirePackage{enumerate}
+% \RequirePackage[shortlabels]{enumitem}
+% \RequirePackage{mathtools}
+% \RequirePackage{microtype}
+
+% \RequirePackage{libertine}
+% \RequirePackage{libertinust1math}
+% \RequirePackage[scaled=0.8]{cascadia-code}
+% \RequirePackage[T1]{fontenc}
+
+% % Configuration specific to your custom commands
+% \pgfplotsset{compat=newest}
+% % \pgfplotsset{plot coordinates/math parser=false}
+% % \pgfplotsset{
+% %     every non boxed x axis/.append style={x axis line style=-},
+% %     every non boxed y axis/.append style={y axis line style=-},
+% %     every non boxed z axis/.append style={z axis line style=-},
+% % }
+
+% % Custom commands
+% \newcommand{\R}{\mathbb{R}}
+% \newcommand{\C}{\mathbb{C}}
+% \newcommand{\Rn}{\mathbb{R}^n}
+% \newcommand{\Z}{\mathbb{Z}}
+% \newcommand{\partiald}[2]{\frac{\partial #1}{\partial #2}}
+% \newcommand{\grad}[1]{\nabla #1}
+% \newcommand{\diverg}[1]{\nabla \cdot #1}
+% \newcommand{\curl}[1]{\nabla \times #1}
+% \newcommand{\dotp}[2]{#1 \cdot #2}
+% \newcommand{\crossp}[2]{#1 \times #2}
+% \newcommand{\dint}{\int\!\!\int}
+% \newcommand{\tint}{\int\!\!\int\!\!\int}
+% \newcommand{\limit}[2]{\lim_{{#1} \to {#2}}}
+% \newcommand{\dd}{\mathop{}\!\mathrm{d}}
+% % \setlength{\parindent}{0pt}
+
+% \theoremstyle{plain}
+% \newtheorem{theorem}{Theorem}[section]
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{proposition}[theorem]{Proposition}
+% \newtheorem{observation}[theorem]{Observation}
+
+% \newtheorem*{theorem*}{Theorem}
+% \newtheorem*{corollary*}{Corollary}
+% \newtheorem*{lemma*}{Lemma}
+% \newtheorem*{proposition*}{Proposition}
+% \newtheorem*{observation*}{Observation}
+
+% \theoremstyle{definition}
+% \newtheorem{definition}[theorem]{Definition}
+% \newtheorem*{definition*}{Definition}
+
+% \theoremstyle{remark}
+% \newtheorem{remark}[theorem]{Remark}
+% \newtheorem*{remark*}{Remark}
+
+% \newtheorem{example}[theorem]{Example}
+% \newtheorem*{example*}{Example}
+
+% \newtheorem{note}[theorem]{Note}
+% \newtheorem*{note*}{Note}
+
+% \newtheorem{hint}[theorem]{Hint}
+% \newtheorem*{hint*}{Hint}
+
+% \newenvironment{proof*}{\begin{proof}[\unskip\nopunct]}{\end{proof}}
+% \newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+
+% \DeclarePairedDelimiter{\pbrac}{(}{)}
+% \DeclarePairedDelimiter{\sbrac}{[}{]}
+% \DeclarePairedDelimiter{\cbrac}{\{}{\}}
+% \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+% \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+% \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+% \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{dylanhu}
+
+\RequirePackage{amsmath,amsfonts,amssymb,amsthm}
+\RequirePackage{asymptote}
+\RequirePackage{cancel}
+\RequirePackage{color}
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{enumerate}
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{mathtools}
+\RequirePackage{minted}
+\RequirePackage{tikz,tikz-cd}
+\RequirePackage{tikz-3dplot}
+\RequirePackage{pgfplots}
+\RequirePackage[shortlabels]{enumitem}
+\RequirePackage{verbatim}
+\RequirePackage[colorlinks=true]{hyperref}
+\hypersetup{
+    linkcolor=NavyBlue,
+    citecolor=ForestGreen,
+    filecolor=Plum,
+    urlcolor=RubineRed,
+}
+\RequirePackage[capitalise,nameinlink]{cleveref}
+\RequirePackage{libertine}
+\RequirePackage{libertinust1math}
+\RequirePackage[scaled=0.8]{cascadia-code}
+\RequirePackage[T1]{fontenc}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem*{note}{Note}
+\newtheorem*{claim}{Claim}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\CO}{\mathcal{O}}
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\CU}{\mathcal{U}}
+
+\DeclarePairedDelimiter{\pa}{\lparen}{\rparen}
+\DeclarePairedDelimiter{\br}{[}{]}
+\DeclarePairedDelimiter{\cbr}{\{}{\}}
+\DeclarePairedDelimiter{\ang}{\langle}{\rangle}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\dabs}{\|}{\|}
+\DeclarePairedDelimiter{\eval}{.}{|}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+\newcommand{\p}{\partial}
+\newcommand{\dd}{\mathop{}\!\mathrm{d}}
+\newcommand{\dv}[3][]{\frac{\dd^{#1} #2}{\dd #3^{#1}}}
+\newcommand{\pdv}[3][]{\frac{\p^{#1} #2}{\p #3^{#1}}}
+\newcommand{\del}{\nabla}
+
+\newcommand{\mat}[1]{\begin{matrix} #1 \end{matrix}}
+\newcommand{\smat}[1]{\begin{smallmatrix} #1 \end{smallmatrix}}
+\newcommand{\bmat}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\bsmat}[1]{\begin{bsmallmatrix} #1 \end{bsmallmatrix}}
+\newcommand{\pmat}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\psmat}[1]{\begin{psmallmatrix} #1 \end{psmallmatrix}}
+
+\newcommand{\E}[1]{\operatorname{\mathbf{E}}\left[#1\right]}
+\newcommand{\Var}[1]{\operatorname{\mathbf{Var}}\left[#1\right]}
+
+\newcommand{\lcm}{\operatorname*{lcm}}
+\newcommand{\argmax}{\operatorname*{arg max}}
+\newcommand{\argmin}{\operatorname*{arg min}}
+
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\onto}{\twoheadrightarrow}
+
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\ch}{\operatorname{char}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Ann}{\operatorname{Ann}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\Ob}{\mathrm{Ob}}
+\newcommand{\Mor}{\mathrm{Mor}}
+\newcommand{\extp}{\@ifnextchar^\@extp{\@extp^{\,}}}
+\def\@extp^#1{\mathop{\bigwedge\nolimits^{\!#1}}}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\on}{\operatorname}
+\newcommand{\nc}{\newcommand}
