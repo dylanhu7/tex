@@ -1,6 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{dylanhu}
 
+\RequirePackage[warnings-off={mathtools-colon,mathtools-overbracket}]{unicode-math}
+\RequirePackage{libertinus}
 \RequirePackage{amsmath,amsfonts,amssymb,amsthm}
 \RequirePackage{asymptote}
 \RequirePackage{cancel}
@@ -10,10 +12,10 @@
 \RequirePackage[margin=1in]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{mathtools}
-\RequirePackage{minted}
 \RequirePackage{tikz,tikz-cd}
 \RequirePackage{tikz-3dplot}
 \RequirePackage{pgfplots}
+\pgfplotsset{compat=1.18}
 \RequirePackage[shortlabels]{enumitem}
 \RequirePackage{verbatim}
 \RequirePackage[colorlinks=true]{hyperref}
@@ -24,10 +26,7 @@
     urlcolor=RubineRed,
 }
 \RequirePackage[capitalise,nameinlink]{cleveref}
-\RequirePackage{libertine}
-\RequirePackage{libertinust1math}
-\RequirePackage[scaled=0.8]{cascadia-code}
-\RequirePackage[T1]{fontenc}
+
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
@@ -38,6 +37,9 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
 \newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{hint}{Hint}
 \newtheorem*{note}{Note}
 \newtheorem*{claim}{Claim}
 

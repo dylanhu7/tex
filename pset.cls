@@ -5,7 +5,6 @@
 % Packages for document formatting
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
-\usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amsthm,amsfonts}
 \usepackage[american]{babel}
 \usepackage{microtype}
@@ -47,10 +46,6 @@
     \end{multicols}
     \setlength{\parskip}{1em}
 }
-
-
-\setlength{\parskip}{1em}
-\setlength{\parindent}{0pt}
 
 \newif\iffancyproblem
 \fancyproblemtrue % default to true, can be changed based on user's selection
