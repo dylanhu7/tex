@@ -1,17 +1,16 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{dylanhu}
 
+\RequirePackage{amsmath,amsfonts,amssymb,amsthm}
+\RequirePackage{mathtools}
 \RequirePackage[warnings-off={mathtools-colon,mathtools-overbracket}]{unicode-math}
 \RequirePackage{libertinus}
-\RequirePackage{amsmath,amsfonts,amssymb,amsthm}
 \RequirePackage{asymptote}
 \RequirePackage{cancel}
 \RequirePackage{color}
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{enumerate}
-\RequirePackage[margin=1in]{geometry}
 \RequirePackage{graphicx}
-\RequirePackage{mathtools}
 \RequirePackage{tikz,tikz-cd}
 \RequirePackage{tikz-3dplot}
 \RequirePackage{pgfplots}
@@ -86,6 +85,8 @@
 \newcommand{\into}{\hookrightarrow}
 \newcommand{\onto}{\twoheadrightarrow}
 
+\newcommand{\Div}{\operatorname{div}}
+\newcommand{\curl}{\operatorname{curl}}
 \newcommand{\im}{\operatorname{im}}
 \newcommand{\rank}{\operatorname{rank}}
 \newcommand{\ch}{\operatorname{char}}
@@ -107,3 +108,6 @@
 \newcommand{\ds}{\displaystyle}
 \newcommand{\on}{\operatorname}
 \newcommand{\nc}{\newcommand}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}

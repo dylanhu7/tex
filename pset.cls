@@ -1,10 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{pset}
-\LoadClass[]{article}
+\LoadClass[]{scrartcl}
 
 % Packages for document formatting
 \usepackage[utf8]{inputenc}
-\usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,amsfonts}
 \usepackage[american]{babel}
 \usepackage{microtype}
